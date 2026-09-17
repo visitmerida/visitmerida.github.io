@@ -65,7 +65,7 @@
   .lang a { color:#fff; text-decoration:none; margin:0 4px; opacity:.75; }
   .lang a:hover { opacity:1; text-decoration:underline; }
   .lang strong { margin:0 4px; border-bottom:2px solid var(--sun); }
-  .btn { background:#fff; color:var(--sea); }
+  .btn { background:#fff; color:var(--sea); } .nl-form { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; max-width:600px; margin:0 auto; } .nl-form input[type=email] { flex:1 1 240px; padding:12px 20px; border-radius:999px; border:none; font-size:1rem; } .nl-form input[type=submit] { border:none; cursor:pointer; } .nl-note { margin:14px auto 0 !important; font-size:.85rem; opacity:.85; }
   .split { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; }
   footer { background:var(--ink); color:#cfc9c0; text-align:center; padding:30px 20px; font-size:.9rem; }
   footer a { color:#fff; margin:0 10px; text-decoration:none; }
@@ -124,8 +124,8 @@
 
 <section class="cta-band">
   <h2>Recevez le briefing hebdo de Mérida</h2>
-  <p><strong>This Week in Mérida</strong> — événements gratuits du week-end, nouvelles adresses et conseils des membres, chaque semaine. Sans spam, désinscription à tout moment.</p>
-  <a class="btn" href="https://buttondown.com/this-week-in-merida">S'abonner gratuitement</a>
+    <p><strong>This Week in Mérida</strong> — événements gratuits du week-end, nouvelles adresses et conseils des membres, chaque semaine. Sans spam, désinscription à tout moment.</p>
+    <form class="nl-form" action="https://buttondown.com/api/emails/embed-subscribe/this-week-in-merida" method="post" target="_blank"><input type="email" name="email" placeholder="vous@exemple.com" required aria-label="Adresse e-mail"><input type="submit" class="btn" value="S'abonner gratuitement"></form><p class="nl-note">Gratuit pour toujours. Désinscription à tout moment.</p></section>
 </section>
 
 <div class="wrap" id="tours">
@@ -150,7 +150,7 @@
 <div class="wrap">
   <h2>Gardez des idées pour plus tard</h2>
   <p class="lede">Suivez nos tableaux Pinterest : Colorful Mérida, Cénotes près de Mérida, Guide de la cuisine de Mérida, Excursions ruines mayas et Conseils voyage Mérida.</p>
-  <a class="btn" href="https://www.pinterest.com/peterkhardman/">Suivre sur Pinterest</a>
+  <a class="btn" href="https://www.pinterest.com/visitmerida/">Suivre sur Pinterest</a>
 </div>
 
 <div class="wrap">
@@ -167,7 +167,7 @@
   <a href="https://www.facebook.com/groups/1060703043502508">Groupe Facebook</a>
   <a href="https://www.facebook.com/profile.php?id=61594368843234">Page Facebook</a>
   <a href="https://buttondown.com/this-week-in-merida">Infolettre</a>
-  <a href="https://www.pinterest.com/peterkhardman/">Pinterest</a>
+  <a href="https://www.pinterest.com/visitmerida/">Pinterest</a>
   <p style="margin-top:12px;">© 2026 Visit Merida · Une communauté gratuite pour les voyageurs à Mérida, Yucatán, Mexique</p>
 </footer>
 
