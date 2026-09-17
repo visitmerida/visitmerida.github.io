@@ -43,6 +43,7 @@
   .btn { display:inline-block; background:var(--terra); color:#fff; text-decoration:none; font-weight:700; padding:12px 26px; border-radius:999px; transition:transform .15s; }
   .btn:hover { transform:scale(1.04); }
   .btn.small { padding:9px 20px; font-size:.95rem; }
+  
   .hero { text-align:center; padding:70px 20px 60px; background:linear-gradient(160deg,#fde9c8 0%,#fff8ef 60%); }
   .hero img { width:130px; height:130px; border-radius:50%; object-fit:cover; box-shadow:0 8px 24px rgba(0,0,0,.15); }
   .hero h1 { font-size:2.4rem; margin:18px 0 8px; }
@@ -61,6 +62,10 @@
   .cta-band h2 { margin-bottom:10px; }
   .cta-band p { max-width:600px; margin:0 auto 24px; opacity:.92; }
   .cta-band .btn { background:#fff; color:var(--sea); }
+.nl-form { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; max-width:600px; margin:0 auto; }
+  .nl-form input[type=email] { flex:1 1 240px; padding:12px 20px; border-radius:999px; border:none; font-size:1rem; }
+  .nl-form input[type=submit] { border:none; cursor:pointer; }
+  .nl-note { margin:14px auto 0 !important; font-size:.85rem; opacity:.85; }  
   .split { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; }
   footer { background:var(--ink); color:#cfc9c0; text-align:center; padding:30px 20px; font-size:.9rem; }
   footer a { color:#fff; margin:0 10px; text-decoration:none; }
@@ -119,8 +124,8 @@
 
 <section class="cta-band">
   <h2>Get the weekly Mérida briefing</h2>
-  <p><strong>This Week in Mérida</strong> — free weekend events, new places to eat, and member tips, every week. No spam, unsubscribe anytime.</p>
-  <a class="btn" href="https://buttondown.com/this-week-in-merida">Subscribe free</a>
+      <p><strong>This Week in Mérida</strong> — free weekend events, new places to eat, and member tips, every week. No spam, unsubscribe anytime.</p>
+    <form class="nl-form" action="https://buttondown.com/api/emails/embed-subscribe/this-week-in-merida" method="post" target="_blank"><input type="email" name="email" placeholder="you@example.com" required aria-label="Email address"><input type="submit" class="btn" value="Subscribe free"></form><p class="nl-note">Free forever. Unsubscribe anytime.</p></section>
 </section>
 
 <div class="wrap" id="tours">
@@ -145,7 +150,7 @@
 <div class="wrap">
   <h2>Save ideas for later</h2>
   <p class="lede">Follow our Pinterest boards: Colorful Mérida, Cenotes near Mérida, Mérida Food Guide, Maya Ruins Day Trips, and Mérida Travel Tips.</p>
-  <a class="btn" href="https://www.pinterest.com/peterkhardman/">Follow on Pinterest</a>
+  <a class="btn" href="https://www.pinterest.com/visitmerida/">Follow on Pinterest</a>
 </div>
 
 <div class="wrap">
@@ -162,7 +167,7 @@
   <a href="https://www.facebook.com/groups/1060703043502508">Facebook Group</a>
   <a href="https://www.facebook.com/profile.php?id=61594368843234">Facebook Page</a>
   <a href="https://buttondown.com/this-week-in-merida">Newsletter</a>
-  <a href="https://www.pinterest.com/peterkhardman/">Pinterest</a>
+  <a href="https://www.pinterest.com/visitmerida/">Pinterest</a>
   <p style="margin-top:12px;">© 2026 Visit Merida · A free community for travelers to Mérida, Yucatán, Mexico</p>
 </footer>
 
