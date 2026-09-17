@@ -1,0 +1,3 @@
+# ads.txt for visitmerida.github.io
+# After Google AdSense approval, replace the example line below with your own publisher ID.
+# Format: google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
